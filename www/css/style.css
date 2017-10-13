@@ -1,0 +1,287 @@
+form .item-input {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.row.intro {
+  margin-top: 20%;
+    text-align: center;
+}
+
+.row.intro img{
+    width: 50%;
+}
+
+.login-form input, .register-form input, .login-form .input-label, .register-form .input-label {
+    color: #FFF;
+}
+
+.show-hide-password i {
+    font-size: 20px!important;
+}
+
+.btn-left {
+    position: absolute;
+    left: 10px;
+}
+
+a.category-label {
+    background-color: #424242;
+    color: #FFF;
+    margin: 0 2px;
+    border-radius: 50px;
+    padding: 3px 6px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.cat-9, .cat-10, .cat-13, .cat-14, .cat-15, .cat-16, .cat-18, .cat-23 {
+    background-color: #ff9900!important;
+}
+
+.cat-11, .cat-27, .cat-29, .cat-30, .cat-24{
+    background-color: #4caf4f!important;
+}
+
+.cat-12, .cat-26, .cat-28, .cat-31, .cat-25{
+    background-color: #f44236!important;
+}
+
+.cat-17, .cat-19, .cat-20, .cat-21, .cat-22{
+    background-color: #2195f3!important;
+}
+
+ion-header-bar {
+    direction: ltr;
+}
+
+.post-card ionic-youtube-video iframe {
+    margin: 0 -16px;
+}
+
+.post ionic-youtube-video iframe {
+    width: calc(100% + 46px)!important;
+    margin: 0 -23px;
+}
+
+
+.card-header h1{
+  color:#135686;
+}
+
+.card-footer, .post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+.card-footer a.bookmark, .post-actions a.bookmark {
+    font-size: 30px;
+}
+
+.card-footer a.comments i {
+    margin-left: 5px;
+}
+
+.category-title:after{
+  content:none!important;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading span {
+    margin-right: 15px;
+}
+
+.loading-container .loading {
+    background-color: #135686;
+}
+
+.spinner-android, .spinner-ios{
+  stroke: #fff;
+}
+
+.title.title-left.header-item{
+  text-align: center;
+  direction: rtl;
+}
+
+.multi-level-push-menu .mp-menu .category-item-container:before{
+  content: none!important;
+}
+
+.category-details i {
+    color: #FFF;
+    font-size: 25px;
+}
+
+.menu-title i {
+    font-size: 25px;
+}
+
+
+
+.side-menu-search label i{
+    padding-left: 6px;
+}
+
+.side-menu-search button {
+    padding: 0!important;
+    margin: 0!important;
+    color: #FFF!important;
+}
+
+.profile-pic-wrapper{
+  height: 150px;
+  margin: 20px;
+}
+
+.profile-pic-wrapper a {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background: #135686;
+  margin: 0 auto;
+  padding: 0;
+  top: 50%;
+  color: #FFF!important;
+}
+
+.profile-pic-wrapper a.activated {
+  background: #135686!important;
+  opacity: 1!important;
+}
+
+
+
+.profile-pic-wrapper img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #135686;
+  object-fit: cover;
+}
+
+.user-avatar{
+  width: 150px;
+  margin: 0 auto;
+}
+
+
+.create_post_form label{
+  padding-right: 5px;
+  padding-left: 5px!important;
+}
+
+.create_post_form input, .create_post_form textarea{
+  padding-right: 0px!important;
+  padding-left: 5px!important;
+}
+
+a.child {
+    padding-right: 40px;
+}
+
+a#cat-1{
+  display: none;
+}
+
+a#cat-106,
+a#cat-107,
+a#cat-108,
+a#cat-109,
+a#cat-110{
+background-color: #2196F3;
+color: #FFF;
+}
+
+a#cat-111,
+a#cat-112,
+a#cat-113,
+a#cat-114,
+a#cat-115,
+a#cat-116{
+background-color: #f44336;
+color: #FFF;
+}
+
+a#cat-117,
+a#cat-118,
+a#cat-119,
+a#cat-120,
+a#cat-121{
+background-color: #4CAF50;
+color: #FFF;
+}
+
+a#cat-122,
+a#cat-123,
+a#cat-124,
+a#cat-125,
+a#cat-126,
+a#cat-127,
+a#cat-128,
+a#cat-129{
+background-color: #FF9800;
+color: #FFF;
+}
+
+span.selectedCats {
+  background-color: #135686;
+  color: #FFF;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 100px;
+  margin: 5px;
+}
+
+.catsLabel{
+      width: auto;
+}
+
+.action-sheet-title, .action-sheet button {
+    text-align: center!important;
+}
+
+.action-sheet button {
+    color: #FFF!important;
+    background-color: #f44336!important;
+    padding: 10px!important;
+}
+
+.settings-card>div{
+  padding: 0!important;
+}
+
+
+.settings-card input{
+  padding: 0!important;
+}
+
+.settings-card .item-input>span{
+  max-width: 120px!important;
+}
+
+.categories-list-title{
+  text-align: center!important;
+}
+
+.post-image{
+        width: 100%;
+        height: 200px;
+        display: flex;
+}
+
+.post-image img{
+        object-fit: cover;
+        width: 100%;
+        height: 200px;
+        padding-bottom: 10px;
+}

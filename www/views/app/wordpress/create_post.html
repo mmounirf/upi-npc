@@ -1,0 +1,38 @@
+<ion-view class="create-post-view">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-search"></button>
+  </ion-nav-buttons>
+  <ion-nav-title>
+    <span>إضافة مقال<span>
+  </ion-nav-title>
+  <ion-content padding="20">
+    <div class="list list-inset form-wrapper">
+      <form class="create_post_form">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">عنوان المقال</span>
+          <input type="text" name="title" ng-model="post.title" placeholder="عنوان المقال">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">محتوي المقال</span>
+          <textarea name="content" ng-model="post.content" placeholder="محتوي المقال" rows="10"></textarea>
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">نشر ضمن مقالات جامعة</span>
+          <input type="text" name="uni_cat" ng-model="uni_cat_name" disabled>
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label catsLabel">التصنيف</span>
+          <span class="selectedCats" ng-repeat="selectedCat in selectedCats">{{selectedCat.cat_name}}</span>
+          <button class="button button-block button-balanced" ng-click="selectCats(selectedCats)">
+            اختيار التصنيف
+          </button>
+
+        </label>
+
+      </form>
+    </div>
+    <button class="button button-full button-positive publish-post-btn" ng-click="publishPost(post)" ng-disabled="selectedCats.length<1 || !post.content || !post.title">
+      نشر المقالة
+    </button>
+  </ion-content>
+</ion-view>

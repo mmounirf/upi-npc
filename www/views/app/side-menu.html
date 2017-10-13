@@ -1,0 +1,64 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content class="post-size-14px">
+    <ion-nav-bar class="bar app-top-bar">
+      <ion-nav-back-button>
+        الرجوع
+      </ion-nav-back-button>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-search" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu class="main-menu" side="right" width="230">
+    <ion-content>
+      <ion-list>
+        <ion-item class="heading-item item" nav-clear menu-close ui-sref="app.settings">
+          <pre-img ratio="_1_1">
+            <img class="user-image" ng-src="{{user.avatar}}" spinner-on-load>
+          </pre-img>
+          <div class="heading-bg">
+          </div>
+          <div class="heading-action item-icon-right">
+            <i class="icon ion-gear-a"></i>
+            <h2 class="greeting">إدارة الحساب</h2>
+          </div>
+        </ion-item>
+        <ion-item class="item item-icon-right" nav-clear menu-close ui-sref="app.create_post">
+          <i class="icon ion-document-text"></i>
+          <h2 class="menu-text">اضافة مقال</h2>
+        </ion-item>
+        <ion-item class="item item-icon-right" nav-clear menu-close ui-sref="app.home">
+          <i class="icon ion-quote"></i>
+          <h2 class="menu-text">آخر المقالات</h2>
+        </ion-item>
+        <ion-item class="item item-icon-right" nav-clear menu-close ui-sref="app.bookmarks">
+          <i class="icon ion-bookmark"></i>
+          <h2 class="menu-text">المقالات المفضلة</h2>
+        </ion-item>
+        <ion-item class="item item-icon-right" nav-clear menu-close ui-sref="app.contact">
+          <i class="icon ion-location"></i>
+          <h2 class="menu-text">راسلنا</h2>
+        </ion-item>
+        <ion-item class="item item-icon-right" nav-clear menu-close ui-sref="#" ng-click="showLogOutMenu()">
+          <i class="icon ion-power"></i>
+          <h2 class="menu-text">تسجيل الخروج</h2>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+  <ion-side-menu class="multi-level-push-menu" side="left" ng-controller="PushMenuCtrl">
+    <ion-content has-bouncing="false" scroll="false">
+      <wp-search>
+      </wp-search>
+      <push-menu menu="menu"></push-menu>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

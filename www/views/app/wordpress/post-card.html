@@ -1,0 +1,20 @@
+<div class="card-header">
+  <h1 ng-bind-html="post.title | rawHtml" ui-sref="app.post({postId :post.id})"></h1>
+  <h2>تم النشر منذ <span am-time-ago="post.date"></span>
+  في
+   <a class="category-label cat-{{category.id}}" ng-repeat="category in post.categories" ng-bind-html="category.title"  ui-sref="app.category({categoryTitle: category.title, categoryId: category.id})"></a>
+  </h2>
+</div>
+<div class="card-content-outer" post-content>
+ <div class="post-image" ng-if="!hasVideo(post.categories)"><img src="{{post.thumbnail_images.full.url}}" /></div>
+  <div class="card-content" dynamic-anchor-fix ng-bind-html="post.content | rawHtml"></div>
+</div>
+<div class="card-footer">
+  <a class="card-button secondary bookmark" ng-click="bookmarkPost(post)">
+    <i class="icon ion-bookmark"></i>
+  </a>
+  <a class="card-button secondary" ng-click="sharePost(post.url)"><i class="icon ion-android-share-alt"></i></a>
+  <a ng-show="post.comment_count > -1" class="card-button comments" ui-sref="app.post({postId :post.id})">
+    {{post.comment_count}} <i class="icon ion-chatbox"></i>
+  </a>
+</div>

@@ -1,0 +1,41 @@
+<ion-view class="contact-view">
+  <ion-nav-title>
+    <span>تواصل معنا</span>
+  </ion-nav-title>
+  <ion-content>
+    <div>
+      <map data-tap-disabled="true" center="{{position.lat}},{{position.lng}}" zoom="15" disable-default-u-i="true">
+        <marker
+          position="{{position.lat}},{{position.lng}}"
+          title="Hello Marker"
+          visible="true">
+        </marker>
+      </map>
+    </div>
+    <div class="contact-content">
+      <div class="">
+
+      </div>
+      <div class="contact-details-item">
+        <h4>العنوان</h4>
+        <div class="featured"></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="contact-details-item">
+        <h4>شبكات التواصل الأجتماعي</h4>
+        <div class="row social-networks" dynamic-anchor-fix>
+          <div class="col"><a href="https://www.facebook.com/%D9%85%D8%A8%D8%A7%D8%AF%D8%B1%D8%A9-%D8%A7%D9%84%D8%B1%D8%A7%D8%A6%D8%AF-%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D9%8A-1871513366440532/"><i class="icon ion-social-facebook facebook-icon"></i></a></div>
+          <div class="col"><a href="https://www.instagram.com/upinpc/"><i class="icon ion-social-instagram instagram-icon"></i></a></div>
+
+        </div>
+      </div>
+      <div class="send-email">
+        <button class="button button-outline button-block featured" ng-controller="EmailSenderCtrl" ng-click="sendContactMail()">
+          ارسال بريد اليكتروني
+        </button>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

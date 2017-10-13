@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "733112448032",
+    "firebase_url": "https://upi-npc.firebaseio.com",
+    "project_id": "upi-npc",
+    "storage_bucket": "upi-npc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733112448032:android:3259ebec6345bb50",
+        "android_client_info": {
+          "package_name": "com.mmounirf.upinpc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733112448032-sil6j1le129ngtn65ehublsj9jgjqh37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFUFHkPiYDEehy4ZZkT-25oXN7ffTwYD8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

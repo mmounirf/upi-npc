@@ -1,0 +1,20 @@
+<ion-modal-view class="filtersModal">
+   <ion-header-bar class="bar bar-header">
+      <button class = "button button-icon icon-left ion-close" ng-click="modal.hide()"></button>
+      <h1 class="title title-center categories-list-title">التصنيفات</h1>
+
+      <button class = "button button-icon icon-left ion-checkmark" ng-click="applySelectedCats(selectedCats)"></button>
+   </ion-header-bar>
+
+   <ion-content>
+
+   <div class="list">
+     <a class="item item-icon-left" ng_repeat="cat in cats" id="cat-{{cat.cat_ID}}" ng-class="{{isParent(parentCatsIDs, cat.cat_ID)}} ? 'parent' : 'child' " ng-click="selectCat(cat)">
+       {{cat.cat_name}}
+       <i class="icon ion-checkmark" ng-show="isCatSelected(cat)"></i>
+     </a>
+   </div>
+
+
+   </ion-content>
+</ion-modal-view>
